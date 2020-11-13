@@ -4,7 +4,7 @@
 ### Team members
 1. Alison Beer (AB)
 2. Jeremy Chia (JC)
-3. sasith Wijebandara (SW)
+3. Sasith Wijebandara (SW)
 
 ### Description and outline
 Clean and transform the data sets to allow analysis and relationships to be created between the 3 different data sets. 
