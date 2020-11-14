@@ -1,5 +1,13 @@
-# ETL Project
-## Victorian vehicle accident data
+# ETL-Project
+## Victorian Vehicle Accident Data
+
+### Purpose
+- To investigate the relationship between the busiest road intersections and the frequency of fatal and injury crashes in Victoria.
+
+### The working questions
+1. What are the busiest intersections in Victoria?
+2. What are the common vehicle types (cars, trucks, motorcycles etc.) involved in fatal and injury crashes in those intersections?
+3. What is the age demographics (by suburb) of motorists?
 
 ### Team members
 1. Alison Beer (AB)
