@@ -50,7 +50,20 @@ Enriching
 - The other datasets will be able to merge on the suburbs and postcodes columns for analysis
 
 #### Victoria Traffic Volume Data
-- 
+- To further our understanding of the Victoria Vehicle Accident Data we wanted to understand the traffic volume of the Victorian postcodes. This would allow us to test the relationship between traffic volume and accidents in certain postcodes.
+- The Department of Transport Open Data provides data on traffic volumes for freeways (excluding tolls) and arterial roads in Victoria. Annual average daily traffic volume is provided with values derived from traffic surveys or estimates for the current year. 
+
+Structuring
+- Postcode data is not provided in this dataset; however, the dataset did provide the TIS_ID (Traffic Information System Id) which is used for joining on to spatial datasets within The Department of Transport Open Data. Joining the Traffic Volume dataset to the homogenous traffic flow data set on TIS_ID, data extracted from the Traffic Information System, outputted data on the Latitude and Longitude of Midpoint of Length Segment for each TIS_ID.
+- Using the Latitude and Longitude data the cordinates were reverse geocoded using Google Maps API to output data on the suburb and postcode.
+- The final step of transforming this dataset was to group the data by postcode so traffic volume data was represented for each post code in the dataset.
+
+Cleaning
+- Postcode and suburb data were missing for an insignificant number of cordinates as a result of the reverse geocoding. This missing data was handled by dropping them.
+- Column headers were renamed to more appropriate callings.
+
+Enriching
+- The other datasets will be able to merge on the postcode column for analysis
 
 #### Demography data from ABS/Census
 - 
