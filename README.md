@@ -32,8 +32,8 @@ Clean and transform the data sets to allow analysis and relationships to be crea
 #### Victoria Traffic Volume Data
 - https://vicroadsopendata-vicroadsmaps.opendata.arcgis.com/datasets/traffic-volume/data?geometry=124.216%2C-39.579%2C166.030%2C-33.402
 
-#### Demography data from ABS/Census
-- 
+#### Demography data from ABS
+- Australian Bureau of Statistics (ABS), 2016 census data, csv files downloaded from: https://datapacks.censusdata.abs.gov.au/datapacks/
 
 ### Data Transformation
 #### Victoria Vehicle Accident Data
@@ -65,7 +65,16 @@ Cleaning
 Enriching
 - The other datasets will be able to merge on the postcode column for analysis
 
-#### Demography data from ABS/Census
-- 
+#### Demographic data from ABS
+- 2016 census data from the ABS was used to provide a picture of the population, by age and sex, for each postcode. The ABS data consisted of three csv files. Two csv's contained the demographic data in four year age groups, by gender and for all persons, and Postal Area (POA) classification. POAs are an ABS approximation of postcodes. This enables the comparison of ABS data with other data collected using postcodes. POAs are incorporated into the Australian Statistical Geography Standard (ASGS) as a non-ABS structure. The third csv file provided the ASGS non-ABS structures which included POA classification and postcode. 
+
+Cleaning
+- All csv's were imported into Pandas as dataframes for cleaning.
+- The two dataframes with the demographic data where merged together using an outer join on the POA code. 
+- The columns of non-driving age were removed (0-14 years and 80+ years).
+- The ASGS Structure dataframe was filtered to only include the POA classification. This filtered dataframe was then merged with the demographic dataframe using a left join on the POA code. 
+- The index of the final dataframe was set to postcode.
+- The POA code column was no longer of use and deleted.
+- The final dataframe was written to a csv file in preparation for importing into an sql database. 
 
 ### Data Loading
