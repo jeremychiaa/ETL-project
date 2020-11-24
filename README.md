@@ -66,7 +66,11 @@ Enriching
 - The other datasets will be able to merge on the postcode column for analysis
 
 #### Demographic data from ABS
-- 2016 census data from the ABS was used to provide a picture of the population, by age and sex, for each postcode. The ABS data consisted of three csv files. Two csv's contained the demographic data in four year age groups, by gender and for all persons, and Postal Area (POA) classification. POAs are an ABS approximation of postcodes. This enables the comparison of ABS data with other data collected using postcodes. POAs are incorporated into the Australian Statistical Geography Standard (ASGS) as a non-ABS structure. The third csv file provided the ASGS non-ABS structures which included POA classification and postcode. 
+- 2016 census data from the ABS was used to provide a picture of the population, by age and sex, for each postcode. 
+- The ABS data consisted of three csv files. 
+- Two csv's contained the demographic data in four year age groups, by gender and for all persons, and Postal Area (POA) classification. 
+- POAs enable the comparison of ABS data with other data collected using postcodes. POAs are incorporated into the Australian Statistical Geography Standard (ASGS) as a non-ABS structure. 
+- The third csv file provided the ASGS non-ABS structures which included POA classification and postcode. 
 
 Cleaning
 - All csv's were imported into Pandas as dataframes for cleaning.
