@@ -83,3 +83,4 @@ Cleaning
 
 ### Data Loading
 - Google Cloud SQL was chosen to store our data as it was convenient for us to load our seperate tables from remote computers to one single database
+- SQL was chosen as our database as our data is relational and normalised
