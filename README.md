@@ -2,7 +2,7 @@
 ## Victorian Vehicle Accident Data
 
 ### Purpose
-- To investigate the relationship between the busiest road intersections and the frequency of fatal and injury crashes in Victoria.
+- To investigate the relationship between the busiest road intersections and the frequency of fatal and injury crashes in Victoria
 
 ### The working questions
 1. What are the busiest intersections in Victoria?
@@ -32,7 +32,7 @@ Clean and transform the data sets to allow analysis and relationships to be crea
 #### Victoria Traffic Volume Data
 - https://vicroadsopendata-vicroadsmaps.opendata.arcgis.com/datasets/traffic-volume/data?geometry=124.216%2C-39.579%2C166.030%2C-33.402
 
-#### Demography data from ABS
+#### Demographic data from ABS
 - Australian Bureau of Statistics (ABS), 2016 census data, csv files downloaded from: https://datapacks.censusdata.abs.gov.au/datapacks/
 
 ### Data Transformation
@@ -82,3 +82,4 @@ Cleaning
 - The final dataframe was written to a csv file in preparation for importing into an sql database. 
 
 ### Data Loading
+- Google Cloud SQL was chosen to store our data as it was convenient for us to load our seperate tables from remote computers to one single database
